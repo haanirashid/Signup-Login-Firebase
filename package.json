@@ -1,18 +1,24 @@
 {
   "name": "fire-base-form",
   "private": true,
+  "homepage": "http://haaniraashid.github.io/Signup-Login-Firebase",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "firebase": "^11.3.1",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
